@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\jan\source\repos\TaxServiceConsole\TaxServiceConsole\bin\Debug\</OutputPath>
+    <OutputPath>..\TaxServiceConsole\bin\Debug</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>C:\Users\jan\source\repos\TaxServiceConsole\TaxServiceConsole\bin\Release\</OutputPath>
+    <OutputPath>..\TaxServiceConsole\bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
