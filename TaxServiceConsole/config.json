@@ -1,0 +1,6 @@
+{
+    "CalculatorSettings": {
+        "TestClient": "TaxJarCalculator.dll",
+        "Default": "DefaultCalculator.dll"
+    }
+}

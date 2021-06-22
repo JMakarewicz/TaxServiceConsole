@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\jan\source\repos\TaxServiceConsole\TaxServiceConsole\bin\Debug\netcoreapp3.1\TaxCalculators\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\Users\jan\source\repos\TaxServiceConsole\TaxServiceConsole\bin\Release\netcoreapp3.1\TaxCalculators\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\RestfulClient\RestfulClient.csproj" />
+  </ItemGroup>
+
+</Project>
