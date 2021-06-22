@@ -7,6 +7,7 @@ using System;
 namespace UnitTests
 {
     [TestClass]
+    
     public class TaxServiceImplementationTests
     {
         private ITaxService _service = null;

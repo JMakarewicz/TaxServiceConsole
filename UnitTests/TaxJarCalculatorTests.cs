@@ -6,6 +6,7 @@ using System;
 namespace UnitTests
 {
     [TestClass]
+    
     public class TaxJarCalculatorTests
     {
         private ITaxCalculator _calculator = null;

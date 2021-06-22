@@ -54,9 +54,9 @@ namespace TaxCalculator
             bool result = true;
             string path = String.Concat("TaxCalculators", "\\", dllPath);
 
-            if (File.Exists(path))
+            if (File.Exists(dllPath))
             {
-                dllPath = path;
+                //dllPath = path;
             }
             else
             {
@@ -65,7 +65,7 @@ namespace TaxCalculator
 
                 if (File.Exists(path))
                 {
-                    dllPath = path;
+                    //dllPath = path;
                 }
                 else
                 {

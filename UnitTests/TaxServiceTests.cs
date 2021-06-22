@@ -12,49 +12,12 @@ using System.IO;
 namespace UnitTests
 {
     [TestClass]
+    
     public class TaxServiceTests
     {
         public readonly string DEBUG_PATH = 
             @"..\..\..\..\TaxServiceConsole\bin\Debug\netcoreapp3.1\";
-        public readonly string RELEASE_PATH = 
-            @"..\..\..\..\TaxServiceConsole\bin\Release\netcoreapp3.1\";
-        public readonly string TAX_CALCULATOR_FOLDER = "TaxCalculators";
-        public readonly string SETTINGS_FILE = "config.json";
-
-        public TaxServiceTests()
-        {
-#if DEBUG
-            File.Copy(String.Concat(DEBUG_PATH, SETTINGS_FILE),
-                String.Concat(Environment.CurrentDirectory, @"\", SETTINGS_FILE), true);
-
-            if(!Directory.Exists(TAX_CALCULATOR_FOLDER))
-            {
-                Directory.CreateDirectory(TAX_CALCULATOR_FOLDER);
-            }
-
-            foreach(string fileName in Directory.EnumerateFiles(
-                String.Concat(DEBUG_PATH, TAX_CALCULATOR_FOLDER), "*.dll"))
-            {
-                File.Copy(fileName, 
-                    fileName.Replace(DEBUG_PATH, String.Concat(Environment.CurrentDirectory, @"\")), true);
-            }
-#else
-                File.Copy(String.Concat(RELEASE_PATH, SETTINGS_FILE),
-                String.Concat(Environment.CurrentDirectory, @"\", SETTINGS_FILE), true);
-
-                if(!Directory.Exists(TAX_CALCULATOR_FOLDER))
-                {
-                    Directory.CreateDirectory(TAX_CALCULATOR_FOLDER);
-                }
-
-                foreach(string fileName in Directory.EnumerateFiles(
-                String.Concat(RELEASE_PATH, TAX_CALCULATOR_FOLDER), "*.dll"))
-                {
-                    File.Copy(fileName, 
-                        fileName.Replace(RELEASE_PATH, String.Concat(Environment.CurrentDirectory, @"\")), true);
-                }
-#endif
-        }
+        
 
         [TestMethod]
         public void InstantiateWithValidCalculator()

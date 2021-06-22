@@ -13,7 +13,7 @@ namespace TaxCalculator
         static CalculatorSettings()
         {
             Configuration = new ConfigurationBuilder()
-                .AddJsonFile(GetRootPath("config.json"))
+                .AddJsonFile("config.json")
                 .Build();
         }
 
@@ -28,26 +28,6 @@ namespace TaxCalculator
             }
 
             return calculatorAssembly;
-        }
-
-        private static string GetRootPath(string rootFileName)
-        {
-            string root = String.Empty, appRoot = String.Empty;
-            string rootDir = null;
-            Regex match = null;
-
-            root = 
-                Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
-            rootDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
-
-            if(!String.IsNullOrEmpty(rootDir))
-            {
-                match = new Regex(@"(?<!fil)[A-Za-z]:\\+[\S\s]*?(?=\\+bin)");
-                appRoot = match.Match(rootDir).Value;
-                root = Path.Combine(appRoot, rootFileName);
-            }
-
-            return root;
         }
     }
 }

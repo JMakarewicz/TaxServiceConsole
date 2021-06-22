@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxJarCalculator", "TaxJarC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestfulClient", "RestfulClient\RestfulClient.csproj", "{AB4D5348-D0BA-4CFB-8230-DF2A53271F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{830CC4FD-AE73-4FA9-92EE-9AEA4811086B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{830CC4FD-AE73-4FA9-92EE-9AEA4811086B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
